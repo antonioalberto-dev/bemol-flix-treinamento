@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: cornflowerblue;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 10px 40px;
+  background-color: var(--primary-color);
+}
+
+nav .img-logo {
+  width: 280px;
+}
+
+nav li {
+  display: inline;
+}
+
+.li-right {
+  float: right;
+  padding: 30px;    
+}
+
+nav li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .carrinho {
+  width: 60px;
+}
