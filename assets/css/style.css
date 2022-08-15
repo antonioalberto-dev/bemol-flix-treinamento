@@ -1,38 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary-color: cornflowerblue;
+  --primary-color: #6495ed;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* NAVBAR */
+
 nav {
-  padding: 10px 40px;
+  padding: 5px;
   background-color: var(--primary-color);
+  height: 15%;
 }
 
-nav .img-logo {
-  width: 280px;
+ul {
+  padding: 0 20px;
+}
+
+nav .nav-logo {
+  width: 120px;
 }
 
 nav li {
   display: inline;
 }
 
-.li-right {
+.nav-item-direita {
   float: right;
-  padding: 30px;    
 }
 
 nav li a {
-  font-size: 40px;
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-nav .carrinho {
-  width: 60px;
+.nav-icons {
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.nav-icons:hover {
+  transform: scale(1.6);
+  transition: 0.7s all;
+}
+
+nav input {
+  width: 20em;
+  margin-top: 8px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid darkslateblue;
+}
+
+/* HEADER - CATALOGO */
+
+.header-catalogo {
+  padding: 30px 70px;
+  background: linear-gradient(270deg, #c77777, #4579db48);
+}
+
+.header-catalogo p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.header-catalogo h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: darkslateblue;
 }
