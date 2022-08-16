@@ -10,9 +10,23 @@
 
 /* NAVBAR */
 
+header {
+  background-color: var(--primary-color);
+  padding: 0 30px;
+}
+
+.header-logo,
+.header-nav {
+  display: inline;
+  vertical-align: middle;
+}
+
+.header-logo img{
+  width: 170px;
+}
+
 nav {
   padding: 5px;
-  background-color: var(--primary-color);
   height: 15%;
 }
 
@@ -26,10 +40,6 @@ nav .nav-logo {
 
 nav li {
   display: inline;
-}
-
-.nav-item-direita {
-  float: right;
 }
 
 nav li a {
@@ -110,7 +120,7 @@ nav input {
 }
 
 .prod-precAntigo {
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: line-through;
 }
 
@@ -118,8 +128,9 @@ nav input {
   font-weight: 600;
   color: blue;
   margin: 5px 0;
+  font-size: 14px;
 }
 
 .prod-parcelamento {
-  font-size: 12px;
+  font-size: 10px;
 }
