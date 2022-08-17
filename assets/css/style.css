@@ -65,7 +65,7 @@ header input {
 .header-catalogo h3 {
   font-size: 2.7em;
   font-weight: bold;
-  color: darkslateblue;
+  color: rgb(28, 19, 87);
   /* padding: 0 0 15px 40px; */
 }
 
@@ -73,25 +73,88 @@ header input {
 
 .lista-produtos {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
 }
 
 /* CARD - PRODUTOS */
 
 .card {
+  width: 17%;
   margin: 10px;
-  width: 200px;
-  height: 250px;
   border: 2px solid rgba(0, 0, 0, 0.238);
   border-radius: 12px;
+  background-color: #000000;
   display: grid;
   justify-items: center;
 }
 
 .card .descricao {
   text-align: center;
+  margin: 7px 0;
+  width: 100px;
+  font-size: 12px;
+  color: white;
+}
+
+.card .preco{
+  text-align: center;
+  color: #c77777;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .card img {
-  width: 125px;
-  margin-top: 10px;
+  width: 100%;
+  border-radius: 11px 11px 0 0;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #202f4b;
+  padding: 20px 0;
+}
+
+footer img {
+  width: 120px;
+}
+
+.indicacao {
+  display: flex;
+}
+
+legend {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+footer input {
+  padding-left: 15px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+}
+
+.btn-indicacao {
+  border-radius: 0 6px 6px 0;
+  border: none;
+  color: white;
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+.indicacao img {
+  width: 20px;
+  margin: 5px 7px 5px 5px;
+}
+
+.btn-indicacao:active {
+  background-color: rgb(6, 51, 6);
 }
