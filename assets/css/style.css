@@ -8,129 +8,90 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* NAVBAR */
-
 header {
   background-color: var(--primary-color);
-  padding: 0 30px;
-}
-
-.header-logo,
-.header-nav {
-  display: inline;
-  vertical-align: middle;
-}
-
-.header-logo img{
-  width: 170px;
-}
-
-nav {
-  padding: 5px;
-  height: 15%;
-}
-
-ul {
   padding: 0 20px;
 }
 
-nav .nav-logo {
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container img {
   width: 120px;
 }
 
-nav li {
-  display: inline;
+.nav-item {
+  margin: 0 10px;
 }
 
-nav li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.nav-icons {
+.nav-item img {
   width: 30px;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 
-.nav-icons:hover {
-  transform: scale(1.6);
-  transition: 0.7s all;
+.nav-item img:hover {
+  transform: scale(1.3);
+  transition: 0.7s;
 }
 
-nav input {
-  width: 20em;
-  margin-top: 8px;
-  padding: 8px 20px;
+header input {
+  width: 40%;
   border-radius: 12px;
+  padding: 5px 15px;
   border: 2px solid darkslateblue;
 }
 
-/* HEADER - CATALOGO */
+.navbar{
+  display: flex;
+}
+
+/* BANNER - CATALOGO */
 
 .header-catalogo {
-  padding: 30px 70px;
   background: linear-gradient(270deg, #c77777, #4579db48);
+  padding: 20px 40px;
 }
 
 .header-catalogo p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  /* padding: 15px 0 0 40px; */
 }
 
 .header-catalogo h3 {
-  font-size: 2.5em;
+  font-size: 2.7em;
   font-weight: bold;
   color: darkslateblue;
+  /* padding: 0 0 15px 40px; */
+}
+
+/* CATALOGO DE PRODUTOS */
+
+.lista-produtos{
+  display: flex;
 }
 
 /* CARD - PRODUTOS */
 
-.lista-produtos {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  width: 18%;
-  height: 25%;
-  padding: 10px;
-  margin: 0 10px;
-  border: 2px solid rgba(0, 0, 0, 0.148);
+.card{
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+  border: 2px solid rgba(0, 0, 0, 0.238);
   border-radius: 12px;
+  display: grid;
+  justify-items: center;
 }
 
-.card img {
-  width: 100%;
-}
-
-.prod-desc {
+.card .descricao{
   text-align: center;
-  margin: 0 0 10px 0;
 }
 
-.card-detalhes {
-  background-color: rgba(112, 128, 144, 0.288);
-  padding: 10px;
-  border-radius: 12px;
-}
-
-.prod-precAntigo {
-  font-size: 10px;
-  text-decoration: line-through;
-}
-
-.prod-precoAtual {
-  font-weight: 600;
-  color: blue;
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-.prod-parcelamento {
-  font-size: 10px;
+.card img{
+  width: 125px;
+  margin-top: 10px;
 }
