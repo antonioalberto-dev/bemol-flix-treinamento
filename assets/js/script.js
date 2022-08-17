@@ -14,6 +14,7 @@ function getData(URL_API) {
       return resposta.json();
     })
     .then((resposta) => {
+      // console.log(resposta.results);
       showData(resposta.results);
     });
 }
@@ -22,13 +23,13 @@ function showData(data) {
   data.forEach((item) => {
     const { title, poster_path, overview, vote_average } = item;
     listaProdutos.innerHTML += `
-        <div class="card">
-            <img src="${IMG_URL + poster_path}" alt="${title}" />
-            <p class="descricao">${title}</p>
-            <div class="card-info">
-                <p class="preco">R$ ${(vote_average * 2.0).toFixed(2)}</p>
-            </div>
-        </div>
-        `;
+    <div class="card">
+      <img src="${IMG_URL + poster_path}" alt="${title}" />
+      <p class="descricao">${title}</p>
+      <div class="card-info">
+        <p class="preco">R$ ${(vote_average * 2.0).toFixed(2)}</p>
+      </div>
+    </div>
+    `;
   });
 }
