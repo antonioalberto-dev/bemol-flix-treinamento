@@ -79,6 +79,7 @@ header input {
   justify-content: space-around;
   padding: 30px;
   background-color: #000000;
+  background: url("../img/background-img.jpg");
 }
 
 /* CARD - PRODUTOS */
@@ -97,7 +98,7 @@ header input {
 .card:hover {
   border-left: 5px solid rgb(211, 218, 20);
   border-right: 5px solid rgb(211, 218, 20);
-  transform: scale(1.05);
+  transform: scale(1.);
   transition: 0.7s;
   margin: 20px 0;
   font-size: 20px;
@@ -174,43 +175,4 @@ footer input {
 
 .btn-indicacao:active {
   background-color: rgb(6, 51, 6);
-}
-
-/* MODAL - TESTE */
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }

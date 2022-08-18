@@ -27,7 +27,7 @@ function showData(data) {
       <img src="${IMG_URL + poster_path}" alt="${title}" />
       <p class="descricao">${title}</p>
       <div class="card-info">
-        <p class="preco">R$ ${(vote_average * 2.0).toFixed(2)}</p>
+        <p class="preco">R$ ${(vote_average * 2.0).toFixed(2).replace(".", ",")}</p>
       </div>
     </div>
     `;
